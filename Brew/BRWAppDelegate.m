@@ -7,12 +7,22 @@
 //
 
 #import "BRWAppDelegate.h"
+#import "BRWViewController.h"
 
 @implementation BRWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    BRWViewController *viewController = [[BRWViewController alloc] init];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor colorWithHexString:@"53322e"];
+    [self.window setRootViewController:viewController];
+    [self.window makeKeyAndVisible];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     return YES;
 }
 							

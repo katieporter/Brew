@@ -13,7 +13,6 @@
 		C0C804A519120D27009C50FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0C804A319120D27009C50FA /* InfoPlist.strings */; };
 		C0C804A719120D27009C50FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C804A619120D27009C50FA /* main.m */; };
 		C0C804AB19120D27009C50FA /* BRWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C804AA19120D27009C50FA /* BRWAppDelegate.m */; };
-		C0C804AE19120D27009C50FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C804AC19120D27009C50FA /* Main.storyboard */; };
 		C0C804B119120D27009C50FA /* BRWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C804B019120D27009C50FA /* BRWViewController.m */; };
 		C0C804B319120D27009C50FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C804B219120D27009C50FA /* Images.xcassets */; };
 		C0C804BA19120D27009C50FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C804B919120D27009C50FA /* XCTest.framework */; };
@@ -21,6 +20,7 @@
 		C0C804BC19120D27009C50FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C8049E19120D27009C50FA /* UIKit.framework */; };
 		C0C804C419120D27009C50FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0C804C219120D27009C50FA /* InfoPlist.strings */; };
 		C0C804C619120D27009C50FA /* BrewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C804C519120D27009C50FA /* BrewTests.m */; };
+		E63E7DD7406A497B90EF06B5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B74AFB3CE349BF89E1731A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A66ADF8C47F4D11B16B8C97 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		83B74AFB3CE349BF89E1731A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C8049719120D27009C50FA /* Brew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C8049A19120D27009C50FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0C8049C19120D27009C50FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,7 +46,6 @@
 		C0C804A819120D27009C50FA /* Brew-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brew-Prefix.pch"; sourceTree = "<group>"; };
 		C0C804A919120D27009C50FA /* BRWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRWAppDelegate.h; sourceTree = "<group>"; };
 		C0C804AA19120D27009C50FA /* BRWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRWAppDelegate.m; sourceTree = "<group>"; };
-		C0C804AD19120D27009C50FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0C804AF19120D27009C50FA /* BRWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRWViewController.h; sourceTree = "<group>"; };
 		C0C804B019120D27009C50FA /* BRWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRWViewController.m; sourceTree = "<group>"; };
 		C0C804B219120D27009C50FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 				C0C8049D19120D27009C50FA /* CoreGraphics.framework in Frameworks */,
 				C0C8049F19120D27009C50FA /* UIKit.framework in Frameworks */,
 				C0C8049B19120D27009C50FA /* Foundation.framework in Frameworks */,
+				E63E7DD7406A497B90EF06B5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,7 @@
 				C0C804BF19120D27009C50FA /* BrewTests */,
 				C0C8049919120D27009C50FA /* Frameworks */,
 				C0C8049819120D27009C50FA /* Products */,
+				4A66ADF8C47F4D11B16B8C97 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +108,7 @@
 				C0C8049C19120D27009C50FA /* CoreGraphics.framework */,
 				C0C8049E19120D27009C50FA /* UIKit.framework */,
 				C0C804B919120D27009C50FA /* XCTest.framework */,
+				83B74AFB3CE349BF89E1731A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,7 +118,6 @@
 			children = (
 				C0C804A919120D27009C50FA /* BRWAppDelegate.h */,
 				C0C804AA19120D27009C50FA /* BRWAppDelegate.m */,
-				C0C804AC19120D27009C50FA /* Main.storyboard */,
 				C0C804AF19120D27009C50FA /* BRWViewController.h */,
 				C0C804B019120D27009C50FA /* BRWViewController.m */,
 				C0C804B219120D27009C50FA /* Images.xcassets */,
@@ -159,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0C804C919120D27009C50FA /* Build configuration list for PBXNativeTarget "Brew" */;
 			buildPhases = (
+				3032E6B821F2406AAC35942F /* Check Pods Manifest.lock */,
 				C0C8049319120D27009C50FA /* Sources */,
 				C0C8049419120D27009C50FA /* Frameworks */,
 				C0C8049519120D27009C50FA /* Resources */,
+				B1B09FC60E99422483C0982C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,7 +236,6 @@
 			files = (
 				C0C804B319120D27009C50FA /* Images.xcassets in Resources */,
 				C0C804A519120D27009C50FA /* InfoPlist.strings in Resources */,
-				C0C804AE19120D27009C50FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +248,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3032E6B821F2406AAC35942F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1B09FC60E99422483C0982C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0C8049319120D27009C50FA /* Sources */ = {
@@ -281,14 +318,6 @@
 				C0C804A419120D27009C50FA /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C0C804AC19120D27009C50FA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C0C804AD19120D27009C50FA /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		C0C804C219120D27009C50FA /* InfoPlist.strings */ = {
@@ -374,6 +403,7 @@
 		};
 		C0C804CA19120D27009C50FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A66ADF8C47F4D11B16B8C97 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -387,6 +417,7 @@
 		};
 		C0C804CB19120D27009C50FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A66ADF8C47F4D11B16B8C97 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +488,7 @@
 				C0C804CB19120D27009C50FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0C804CC19120D27009C50FA /* Build configuration list for PBXNativeTarget "BrewTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +497,7 @@
 				C0C804CE19120D27009C50FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,6 +10,8 @@
 
 @interface BRWViewController ()
 
+@property (nonatomic, strong) UIImageView *imageView;
+
 @end
 
 @implementation BRWViewController
@@ -17,7 +19,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    UIImage *image = [UIImage imageNamed:@"Excited"];
+    self.imageView = [[UIImageView alloc] initWithImage:image];
+    
+    [self.view addSubview:self.imageView];
+    
+    [self.imageView makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.width.equalTo(@(153));
+        make.height.equalTo(@(196));
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning
