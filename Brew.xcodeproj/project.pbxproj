@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91B5B27B1917F243006A8D01 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B5B27A1917F243006A8D01 /* CoreBluetooth.framework */; };
+		91B5B2851917F8EF006A8D01 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B5B2831917F8EF006A8D01 /* BLE.m */; };
 		C0C8049B19120D27009C50FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C8049A19120D27009C50FA /* Foundation.framework */; };
 		C0C8049D19120D27009C50FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C8049C19120D27009C50FA /* CoreGraphics.framework */; };
 		C0C8049F19120D27009C50FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C8049E19120D27009C50FA /* UIKit.framework */; };
@@ -36,6 +38,10 @@
 /* Begin PBXFileReference section */
 		4A66ADF8C47F4D11B16B8C97 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		83B74AFB3CE349BF89E1731A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B5B27A1917F243006A8D01 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		91B5B2821917F8EF006A8D01 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		91B5B2831917F8EF006A8D01 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		91B5B2841917F8EF006A8D01 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 		C0C8049719120D27009C50FA /* Brew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C8049A19120D27009C50FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0C8049C19120D27009C50FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B5B27B1917F243006A8D01 /* CoreBluetooth.framework in Frameworks */,
 				C0C8049D19120D27009C50FA /* CoreGraphics.framework in Frameworks */,
 				C0C8049F19120D27009C50FA /* UIKit.framework in Frameworks */,
 				C0C8049B19120D27009C50FA /* Foundation.framework in Frameworks */,
@@ -81,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91B5B2861917F98C006A8D01 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				91B5B2821917F8EF006A8D01 /* BLE.h */,
+				91B5B2831917F8EF006A8D01 /* BLE.m */,
+				91B5B2841917F8EF006A8D01 /* BLEDefines.h */,
+			);
+			name = BLE;
+			path = Brew;
+			sourceTree = "<group>";
+		};
 		C0C8048E19120D27009C50FA = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +122,8 @@
 		C0C8049919120D27009C50FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91B5B2861917F98C006A8D01 /* BLE */,
+				91B5B27A1917F243006A8D01 /* CoreBluetooth.framework */,
 				C0C8049A19120D27009C50FA /* Foundation.framework */,
 				C0C8049C19120D27009C50FA /* CoreGraphics.framework */,
 				C0C8049E19120D27009C50FA /* UIKit.framework */,
@@ -289,6 +309,7 @@
 			files = (
 				C0C804B119120D27009C50FA /* BRWViewController.m in Sources */,
 				C0C804AB19120D27009C50FA /* BRWAppDelegate.m in Sources */,
+				91B5B2851917F8EF006A8D01 /* BLE.m in Sources */,
 				C0C804A719120D27009C50FA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

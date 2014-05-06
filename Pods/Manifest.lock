@@ -1,13 +1,16 @@
 PODS:
   - Masonry (0.4.0)
+  - SVProgressHUD (1.0)
   - UIColor-Utilities (1.0.1)
 
 DEPENDENCIES:
   - Masonry
+  - SVProgressHUD
   - UIColor-Utilities
 
 SPEC CHECKSUMS:
   Masonry: d673617c9cbc24aaea90fba20b10e47fd9970a39
+  SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
   UIColor-Utilities: 5c2076b975f423097011aeea4012e75857dd9c99
 
 COCOAPODS: 0.32.1
